@@ -1,0 +1,104 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://GFX/Environment/walls/BlockMap1.png" type="Texture" id=1]
+[ext_resource path="res://GFX/Environment/walls/BlockMap2.png" type="Texture" id=2]
+[ext_resource path="res://GFX/Environment/walls/BlockMap3.png" type="Texture" id=3]
+[ext_resource path="res://GFX/Environment/walls/BlockMap4.png" type="Texture" id=4]
+[ext_resource path="res://GFX/Environment/walls/BlockMap5.png" type="Texture" id=5]
+[ext_resource path="res://GFX/Environment/walls/BlockMap6.png" type="Texture" id=6]
+[ext_resource path="res://GFX/Environment/walls/BlockMap7.png" type="Texture" id=7]
+[ext_resource path="res://GFX/Environment/walls/BlockMap8.png" type="Texture" id=8]
+[ext_resource path="res://GFX/Environment/walls/BlockMap9.png" type="Texture" id=9]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2( 0.38, 0.4 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 114.273, -110.697 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Sprite"]
+polygon = PoolVector2Array( -413.347, -312.184, -413.347, 311.085, 414.908, 311.085, 414.908, -312.184 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 1071.02, -81.6163 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Sprite2"]
+polygon = PoolVector2Array( -413.347, -312.184, -413.347, 311.085, 414.908, 311.085, 414.908, -312.184 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 2002.01, -52.5353 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Sprite3"]
+polygon = PoolVector2Array( -413.347, -312.184, -413.347, 311.085, 414.908, 311.085, 414.908, -312.184 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( 2019.62, 643.682 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Sprite4"]
+polygon = PoolVector2Array( -413.347, -312.184, -413.347, 311.085, 414.908, 311.085, 414.908, -312.184 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 1014.62, 633.771 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Sprite5"]
+polygon = PoolVector2Array( -413.347, -312.184, -413.347, 311.085, 414.908, 311.085, 414.908, -312.184 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+position = Vector2( 80.2443, 643.796 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Sprite6"]
+polygon = PoolVector2Array( -413.347, -312.184, -413.347, 311.085, 414.908, 311.085, 414.908, -312.184 )
+
+[node name="Sprite7" type="Sprite" parent="."]
+position = Vector2( 94.2567, 1365.48 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Sprite7"]
+polygon = PoolVector2Array( -413.347, -312.184, -413.347, 311.085, 414.908, 311.085, 414.908, -312.184 )
+
+[node name="Sprite8" type="Sprite" parent="."]
+position = Vector2( 1039.97, 1388.91 )
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Sprite8"]
+polygon = PoolVector2Array( -413.347, -312.184, -413.347, 311.085, 414.908, 311.085, 414.908, -312.184 )
+
+[node name="Sprite9" type="Sprite" parent="."]
+position = Vector2( 2092.29, 1408.57 )
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Sprite9"]
+polygon = PoolVector2Array( -413.347, -312.184, -413.347, 311.085, 414.908, 311.085, 414.908, -312.184 )

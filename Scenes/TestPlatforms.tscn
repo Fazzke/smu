@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GFX/Environment/Platform-medium.png" type="Texture" id=1]
+[ext_resource path="res://GFX/Environment/Platform-small.png" type="Texture" id=2]
+
+[node name="Platforms" type="Node2D"]
+
+[node name="TestMedium" type="Sprite" parent="."]
+position = Vector2( 419.717, 138.041 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TestMedium"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TestMedium/StaticBody2D"]
+polygon = PoolVector2Array( -170.023, 25.2828, -166.348, -43.0807, -150.176, -57.7826, 4.92871, -57.7826, 136.51, -58.5177, 163.708, -48.9615, 175.47, -7.06123, 172.53, 27.4881, 172.53, 27.4881, 107.842, 12.0511, 20.3657, 40.7197, -5.36255, 17.1968, -48.733, 31.8986, -75.1963, 10.581, -91.3683, 20.8723, -116.361, 15.7266, -161.202, 52.4812 )
+
+[node name="TestSmall" type="Sprite" parent="."]
+position = Vector2( 399.09, 310.988 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TestSmall"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TestSmall/StaticBody2D"]
+polygon = PoolVector2Array( -94.2644, 35.3733, -87.6486, -35.9306, -67.8011, -54.3079, -39.1325, -57.9834, 60.1049, -57.9834, 87.3033, -44.7517, 92.4489, -21.2288, 85.098, 51.5453, 79.9523, 32.4329, 70.3961, 44.1944, 64.5154, 33.168, 57.8996, 40.5189, 52.0189, 28.0223, 40.9925, 44.1944, 37.317, 23.6118, 29.231, 33.9031, 14.5292, 19.9363, 5.70807, 39.0487, 0.562439, 34.6382, -6.78848, 33.9031, -13.4043, 22.1416, -20.7552, 38.3136, -29.5763, 22.1416, -36.1921, 32.4329, -47.2185, 19.2012, -50.1589, 41.9891, -55.3045, 28.0223, -63.3906, 36.1084, -71.4766, 25.082, -75.152, 42.7242, -83.9731, 26.5522, -89.8539, 44.1944 )

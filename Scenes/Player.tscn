@@ -1,0 +1,53 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://GFX/Players/StehenOhr.png" type="Texture" id=2]
+[ext_resource path="res://GFX/Players/runright2.png" type="Texture" id=3]
+[ext_resource path="res://GFX/Players/runright3.png" type="Texture" id=4]
+[ext_resource path="res://GFX/Players/runright1.png" type="Texture" id=5]
+[ext_resource path="res://GFX/Players/OhrBohr1.png" type="Texture" id=6]
+[ext_resource path="res://GFX/Players/OhrBohr2.png" type="Texture" id=7]
+[ext_resource path="res://GFX/Players/hitright2.png" type="Texture" id=8]
+[ext_resource path="res://GFX/Players/hitright1.png" type="Texture" id=9]
+[ext_resource path="res://Scripts/PlayerAnimation.gd" type="Script" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "runright",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "ohrenbohren",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "hitright",
+"speed": 3.0
+} ]
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( -10.8151, 0 )
+collision_mask = 14
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 29.3863, 52.0277 )
+scale = Vector2( 0.1, 0.1 )
+frames = SubResource( 1 )
+animation = "hitright"
+frame = 1
+playing = true
+script = ExtResource( 10 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -411.797, -254.035 )
+polygon = PoolVector2Array( 450.655, 157.496, 423.741, 170.66, 410.999, 241.473, 417.456, 300.551, 410.775, 414.95, 434.914, 311.026, 469.133, 346.641, 471.228, 412.285, 465.641, 271.221, 465.817, 225.144, 457.653, 162.161 )

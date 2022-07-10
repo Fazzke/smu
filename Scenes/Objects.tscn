@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://GFX/Environment/objects/fensteridle.png" type="Texture" id=1]
+[ext_resource path="res://GFX/Environment/objects/fenstertransparent.png" type="Texture" id=2]
+[ext_resource path="res://GFX/Environment/objects/fensterundurchsichtig.png" type="Texture" id=3]
+[ext_resource path="res://GFX/Environment/objects/flame1.png" type="Texture" id=4]
+[ext_resource path="res://GFX/Environment/objects/flame2.png" type="Texture" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[node name="Objects" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 182.852, 161.652 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Sprite"]
+polygon = PoolVector2Array( -1231.6, -1235.51, -1231.6, 1238.48, 1242.39, 1238.48, 1242.39, -1274.47 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 192.592, 488.919 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Sprite2"]
+polygon = PoolVector2Array( -1231.6, -1235.51, -1231.6, 1238.48, 1242.39, 1238.48, 1242.39, -1274.47 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 518.547, 170.915 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Sprite3"]
+polygon = PoolVector2Array( -1231.6, -1235.51, -1231.6, 1238.48, 1242.39, 1238.48, 1242.39, -1274.47 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 511.457, 487.606 )
+frames = SubResource( 1 )
+animation = "idle"
+playing = true
+
+[node name="Polygon2D" type="Polygon2D" parent="AnimatedSprite"]
+polygon = PoolVector2Array( -7.64432, 55.1574, -4.46661, 48.802, -4.46661, 9.08057, -10.0276, -1.24701, -10.0276, -15.9439, -8.43875, -28.2576, -9.6304, -44.1461, 0.697144, -56.0626, 10.6276, -40.9684, 8.64148, -19.1216, 8.64148, -13.9579, 9.83313, -0.0553589, 4.66931, 14.6416, 3.87488, 46.8159, 7.84705, 55.9519 )
