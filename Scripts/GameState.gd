@@ -3,6 +3,7 @@ extends Node2D
 export var starting_lives = 3 #shows up in inspector
 #diesenkommentar
 #einanderer kommentar
+#EINLETZTESMAL und wenn dann nicht das ganze Scheißgesindel rausgeflogen ist, dann bleibe ich halt weg
 var lives
 var coins = 0
 
