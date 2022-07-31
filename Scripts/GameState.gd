@@ -1,7 +1,7 @@
 extends Node2D
 
 export var starting_lives = 3 #shows up in inspector
-
+#diesenkommentar
 var lives
 var coins = 0
 
